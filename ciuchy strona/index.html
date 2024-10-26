@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Itemki </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="document">
+
+        <div id="top-bar">
+            <span id="date-time"></span>
+            <span id="options">
+                <span> 🌐 ig: pako.xaxa </span>
+            </span>
+        </div>
+
+        <h1> Itemki - linki </h1>
+        <input type="text" id="search-input" placeholder="Czego szukasz? (wpisz 'wszystko', aby zobaczyć całą listę)">
+        <button onclick="performSearch()"> Szukaj </button>
+        <button id="toggle-button" onclick="toggleList()"> Pokaż/Ukryj listę </button>
+
+        <div id="product-list">
+            <div class="product">
+                <h2> #1 L Down Jacket Ralph Lauren </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7267920275&update=true">
+                    https://cnfans.com/product/?shop_type=weidian&id=7267920275&update=true
+                </a>
+                <p> Cena: 330 złotych </p>
+            </div>
+
+            <div class="product">
+                <h2> #2 Jordan 4 (Best Batch) </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7230603686">
+                    https://cnfans.com/product/?shop_type=weidian&id=7230603686
+                </a>
+                <p> Cena: 240 złotych </p>
+            </div>
+
+            <div class="product">
+                <h2> #3 Moncler Bluza </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7282956820">
+                    https://cnfans.com/product/?shop_type=weidian&id=7282956820
+                </a>
+                <p> Cena: 112 złotych </p>
+            </div>
+
+            <div class="product">
+                <h2> #4 bluza ralph lauren </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=6990966530&ref=150703 ">
+                    https://cnfans.com/product/?shop_type=weidian&id=6990966530&ref=150703 
+                </a>
+                <p> Cena: 118 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #5 canadian west </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7274209511 ">
+                    https://cnfans.com/product/?shop_type=weidian&id=7274209511 
+                </a>
+                <p> Cena: 230 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #6 Fashion Street Designer pure color American retro Trendy hip hop Handsome Drip silm Elastic Skinny Jeans Denim </h2>
+                <a href="https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=737901319702&shop_type=taobao">
+                    https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=737901319702&shop_type=taobao
+                </a>
+                <p> Cena: 122 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #7 2024 New arrival Pants Men Denim Men's Black Ripped Trendy Trendy Handsome Street Men's Fall and winter Fleece-lined </h2>
+                <a href="https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=624367050886&shop_type=taobao">
+                    https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=624367050886&shop_type=taobao
+                </a>
+                <p> Cena: 105 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #8 Slim Men's Pants Foreign Trade </h2>
+                <a href="https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=669717732248&shop_type=ali_1688">
+                    https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=669717732248&shop_type=ali_1688
+                </a>
+                <p> Cena: 50 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #9 Slim Men's Pants Foreign Trade </h2>
+                <a href="https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=669717732248&shop_type=ali_1688">
+                    https://cnfans.com/product/?spm=fxg_1325870.all_page.0.0.64172902BgErBB&id=669717732248&shop_type=ali_1688
+                </a>
+                <p> Cena: 50 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #10 CRTZStarz skateboard street Deconstruct detachable crow Down jacket Outwear cotton </h2>
+                <a href="https://cnfans.com/product/?shop_type=taobao&id=785851826992">
+                    https://cnfans.com/product/?shop_type=taobao&id=785851826992
+                </a>
+                <p> Cena: 150 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #11 Nike tn </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7264968581">
+                    https://cnfans.com/product/?shop_type=weidian&id=7264968581
+                </a>
+                <p> Cena: 186 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #12 yezzy &#9888; </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=6357399660&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=6357399660&ref=73572
+                </a>
+                <p> Cena: 64 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #13 lf down jacket </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7283078271">
+                    https://cnfans.com/product/?shop_type=weidian&id=7283078271
+                </a>
+                <p> Cena: 368 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #14 nike spodnie </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7239086550&ref=143681">
+                    https://cnfans.com/product/?shop_type=weidian&id=7239086550&ref=143681
+                </a>
+                <p> Cena: 118 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #15 jordan 4 (best batch) </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=4480422436&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=4480422436&ref=73572
+                </a>
+                <p> Cena: 163 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #16 jordan 1 chicago &#9888; </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=4428934012&ref=735722">
+                    https://cnfans.com/product/?shop_type=weidian&id=4428934012&ref=73572
+                </a>
+                <p> Cena: 155 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #17 jordan 3 reimagined &#9888; </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=6152571509&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=6152571509&ref=73572
+                </a>
+                <p> Cena: 262 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #18 air jordan x dior &#9888; </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=5901324831&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=5901324831&ref=73572
+                </a>
+                <p> Cena: 456 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #19 jordan 4 &#9888; </h2>
+                <a href="https://cnfans.com/pl/product/?shop_type=weidian&id=6656410659&ref=73572">
+                    https://cnfans.com/pl/product/?shop_type=weidian&id=6656410659&ref=73572
+                </a>
+                <p> Cena: 285 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #20 Jordan 4 Wet Cement Y3 (collection Whatsapp) </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=6131071820&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=6131071820&ref=73572
+                </a>
+                <p> Cena: 237 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #21 Jordan 5 &#9888; </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7248925859&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=7248925859&ref=73572
+                </a>
+                <p> Cena: 285 zł </p>
+                <p> &#9888; warm reminder </p>
+            </div>
+
+            <div class="product">
+                <h2> #22 purple lobster </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7231349365&ref=73572">
+                    https://cnfans.com/product/?shop_type=weidian&id=7231349365&ref=73572
+                </a>
+                <p> Cena: 268 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #23 hellstar </h2>
+                <a href="https://cnfans.com/product/?shop_type=taobao&id=837970702443&ref=73572572">
+                    https://cnfans.com/product/?shop_type=taobao&id=837970702443&ref=73572
+                </a>
+                <p> Cena: 186 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #24 synaworld suit </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7250447234&ref=73572572">
+                    https://cnfans.com/product/?shop_type=weidian&id=7250447234&ref=73572
+                </a>
+                <p> Cena: 118 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #25 amiri jeans </h2>
+                <a href="https://cnfans.com/zh/product/?shop_type=weidian&id=7233189809">
+                    https://cnfans.com/zh/product/?shop_type=weidian&id=7233189809
+                </a>
+                <p> Cena: 177 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #26 gallery dept spodnie </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7252858280 ">
+                    https://cnfans.com/product/?shop_type=weidian&id=7252858280 
+                </a>
+                <p> Cena: 126 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #27 bape shark </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7238709688">
+                    https://cnfans.com/product/?shop_type=weidian&id=7238709688
+                </a>
+                <p> Cena: 126 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #28 north face jacket </h2>
+                <a href="https://cnfans.com/zh/product/?shop_type=weidian&id=7290442206">
+                    https://cnfans.com/zh/product/?shop_type=weidian&id=7290442206 
+                </a>
+                <p> Cena: 234 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #29 jordan 4 </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7251261305">
+                    https://cnfans.com/product/?shop_type=weidian&id=7251261305
+                </a>
+                <p> Cena: 215 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #30 j1 high </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7268896837">
+                    https://cnfans.com/product/?shop_type=weidian&id=7268896837
+                </a>
+                <p> Cena: 253 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #31 nike x nocta puffer </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7272858727">
+                    https://cnfans.com/product/?shop_type=weidian&id=7272858727 
+                </a>
+                <p> Cena: 189 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #32 bluza corteiz </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7252858292">
+                    https://cnfans.com/product/?shop_type=weidian&id=7252858292 
+                </a>
+                <p> Cena: 105 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #33 jordan 4 </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7238625790">
+                    https://cnfans.com/product/?shop_type=weidian&id=7238625790
+                </a>
+                <p> Cena: 309 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #34 lv trainers </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=72297637990">
+                    https://cnfans.com/product/?shop_type=weidian&id=7229763799
+                </a>
+                <p> Cena: 296 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #35 af 1 </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7247468581">
+                    https://cnfans.com/product/?shop_type=weidian&id=7247468581
+                </a>
+                <p> Cena: 106 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #36 2024 Goose High-end Goose Big Pocket Down Jacket for Men and Women Couple Parker Hooded Thickened Warm Windproof Jacket </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7259421101">
+                    https://cnfans.com/product/?shop_type=weidian&id=7259421101
+                </a>
+                <p> Cena: 563 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #37 skarpety nike </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7274327945">
+                    https://cnfans.com/product/?shop_type=weidian&id=7274327945
+                </a>
+                <p> Cena: 19 zł </p>
+            </div>
+
+            <div class="product">
+                <h2> #38 The north face (kurtka) </h2>
+                <a href="https://cnfans.com/product/?id=6503405541&shop_type=weidian&ref=141098">
+                    https://cnfans.com/product/?id=6503405541&shop_type=weidian&ref=141098
+                </a>
+                <p> Cena: 290 zł </p>
+            </div>
+
+            
+            <div class="product">
+                <h2> #39 travisy, aj1 olive </h2>
+                <a href="https://cnfans.com/product/?shop_type=weidian&id=7281789846">
+                    https://cnfans.com/product/?shop_type=weidian&id=7281789846
+                </a>
+                <p> Cena: 208 zł </p>
+            </div>
+
+        </div>
+
+        <div id="no-products-message"> Brak produktów o tej nazwie. </div>
+        <button id="retry-button" style="display: none;" onclick="retrySearch()"> Spróbuj ponownie </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
